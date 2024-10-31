@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diwali Festival</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .gift {
+                padding: 5px;
+                cursor: pointer;
+            }
+            .gift img {
+                height: 400px;
+                width: 400px;
+            }
+            .gift img.open {
+                height: 500px;
+                width: 50%%;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $('.gift').click(function() {
+                    $(this).find('img')
+                        .attr('src', 'https://www.davora.co.uk/wp-content/uploads/2021/02/DWF1031.jpg')  <!-- Replace with a real online URL for open image -->
+                        .addClass('open');
+
+                    $(this).off('click');
+                });
+            });
+        </script>
+    </head>
+    <body bgcolor="lavender">
+        <center>
+            <h1>Happy Diwali</h1>
+            <div class="gift">
+                <img src="https://www.prlog.org/12397540-packaging-gift-boxes.jpg"> <!-- Replace with a real online URL for initial image -->
+            </div>
+        </center>
+    </body>
+</html>
